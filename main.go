@@ -1,4 +1,4 @@
-//go:generate go-bind-plugin -plugin-package=./plugin -rebuild
+//go:generate go-bind-plugin -plugin-package=./plugin -rebuild -dereference-vars
 package main
 
 import (
@@ -13,9 +13,10 @@ func main() {
 		log.Fatal(err)
 	}
 
-	fmt.Printf("sin(0) = %f\n", plug.CalculateSin(100.00))
+	fmt.Printf("plug.CalculateSin(100.0) = %f\n", plug.CalculateSin(100.00))
 	plug.SayHello("Gophers!")
 
-	fmt.Printf("Current year is: %d", plug.CurrentYear)
+	fmt.Printf("plug.CurrentYear is: %d\n\n\n", plug.CurrentYear)
+
 	fmt.Println(plug)
 }
