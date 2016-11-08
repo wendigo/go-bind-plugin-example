@@ -16,7 +16,7 @@ go build
 ./go-bind-plugin-example
 ```
 
-## Expected output
+## Expected output from [./go-bind-plugin-example](https://github.com/wendigo/go-bind-plugin-example/blob/master/main.go)
 ```
 plug.CalculateSin(100.0) = -0.506366
 Hello Gophers!
@@ -44,6 +44,6 @@ Plugin imports:
 
 As simple as it is :)
 
-See generated [plugin_api.go](https://github.com/wendigo/go-bind-plugin-example/blob/master/plugin_api.go) and invocation in [main.go](https://github.com/wendigo/go-bind-plugin-example/blob/master/main.go)
+See generated [plugin_api.go](https://github.com/wendigo/go-bind-plugin-example/blob/master/plugin_api.go).
 
 Have fun with go plugins!
