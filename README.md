@@ -1,6 +1,6 @@
 # go-bind-plugin-example
 
-This is example plugin that demonstrates how to use [go-bind-plugin](github.com/wendigo/go-bind-plugin). Plugin sources are located in: [plugin/plugin.go](https://github.com/wendigo/go-bind-plugin-example/tree/master/plugin/plugin.go).
+This is example plugin that demonstrates how to use [go-bind-plugin](github.com/wendigo/go-bind-plugin). Plugin sources are located in: [plugin/plugin.go](https://github.com/wendigo/go-bind-plugin-example/blob/master/plugin/plugin.go).
 
 Please note that go1.8 (or tip) is required to play with [=buildmode=plugin](https://tip.golang.org/pkg/plugin).
 
@@ -44,6 +44,6 @@ Plugin imports:
 
 As simple as it is :)
 
-See generated [plugin_api.go](https://github.com/wendigo/go-bind-plugin-example/tree/master/plugin/plugin_api.go) and invocation in [main.go](https://github.com/wendigo/go-bind-plugin-example/tree/master/main.go)
+See generated [plugin_api.go](https://github.com/wendigo/go-bind-plugin-example/blob/master/plugin/plugin_api.go) and invocation in [main.go](https://github.com/wendigo/go-bind-plugin-example/blob/master/main.go)
 
 Have fun with go plugins!
