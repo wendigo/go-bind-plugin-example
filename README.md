@@ -16,7 +16,18 @@ go build
 ./go-bind-plugin-example
 ```
 
-## Expected output from [./go-bind-plugin-example](https://github.com/wendigo/go-bind-plugin-example/blob/master/main.go)
+## Expected output
+
+### go generate
+```
+go-bind-plugin 20:47:59 Building plugin plugin.so from package ./plugin
+go-bind-plugin 20:48:02 Loading and analyzing plugin from: plugin.so
+go-bind-plugin 20:48:02 Generating output wrapper: plugin_api.go...
+go-bind-plugin 20:48:02 Formatting generated file with gofmt -s -w plugin_api.go
+go-bind-plugin 20:48:02 Generated wrapper PluginAPI in file plugin_api.go
+```
+
+### [./go-bind-plugin-example](https://github.com/wendigo/go-bind-plugin-example/blob/master/main.go):
 ```
 plug.CalculateSin(100.0) = -0.506366
 Hello Gophers!
