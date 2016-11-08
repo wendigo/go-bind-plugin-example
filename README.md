@@ -44,6 +44,6 @@ Plugin imports:
 
 As simple as it is :)
 
-See generated [plugin_api.go](https://github.com/wendigo/go-bind-plugin-example/blob/master/plugin/plugin_api.go) and invocation in [main.go](https://github.com/wendigo/go-bind-plugin-example/blob/master/main.go)
+See generated [plugin_api.go](https://github.com/wendigo/go-bind-plugin-example/blob/master/plugin_api.go) and invocation in [main.go](https://github.com/wendigo/go-bind-plugin-example/blob/master/main.go)
 
 Have fun with go plugins!
