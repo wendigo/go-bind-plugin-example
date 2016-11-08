@@ -4,7 +4,7 @@ This is example plugin that demonstrates how use [go-bind-plugin](github.com/wen
 
 Please note that go1.8 (or tip) is required to play with [plugins](https://tip.golang.org/pkg/plugin).
 
-# How to run/build/play with
+## How to run/build/play with
 
 ```
 go version
@@ -16,7 +16,7 @@ go build
 ./go-bind-plugin-example
 ```
 
-# Expected output
+## Expected output
 ```
 plug.CalculateSin(100.0) = -0.506366
 Hello Gophers!
