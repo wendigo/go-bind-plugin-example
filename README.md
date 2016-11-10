@@ -20,11 +20,11 @@ go build
 
 ### go generate
 ```
-go-bind-plugin 20:47:59 Building plugin plugin.so from package ./plugin
-go-bind-plugin 20:48:02 Loading and analyzing plugin from: plugin.so
-go-bind-plugin 20:48:02 Generating output wrapper: plugin_api.go...
-go-bind-plugin 20:48:02 Formatting generated file with gofmt -s -w plugin_api.go
-go-bind-plugin 20:48:02 Generated wrapper PluginAPI in file plugin_api.go
+go-bind-plugin 12:44:43 Building plugin plugin.so from package ./plugin
+go-bind-plugin 12:44:46 Loading and analyzing plugin from: plugin.so
+go-bind-plugin 12:44:46 Generating output wrapper: plugin_api.go...
+go-bind-plugin 12:44:46 Formatting generated file with gofmt -s -w plugin_api.go
+go-bind-plugin 12:44:46 Generated wrapper PluginAPI in file plugin_api.go
 ```
 
 ### [./go-bind-plugin-example](https://github.com/wendigo/go-bind-plugin-example/blob/master/main.go):
@@ -34,13 +34,13 @@ Hello Gophers!
 plug.CurrentYear is: 2016
 
 
-Wrapper info:
-	- Generated on: 2016-11-08 17:58:37.219391162 +0100 CET
-	- Command: go-bind-plugin -plugin-path plugin.so -plugin-package ./plugin -output-name PluginAPI -output-path plugin_api.go -output-package  -dereference-vars -rebuild
+Struct PluginAPI:
+	- Generated on: 2016-11-10 12:41:18.706772009 +0100 CET
+	- Command: go-bind-plugin -plugin-path plugin.so -plugin-package ./plugin -output-name PluginAPI -output-path plugin_api.go -output-package main -dereference-vars -rebuild
 
 Plugin info:
 	- package: github.com/wendigo/go-bind-plugin-example/plugin
-	- sha256 sum: 4f6b6afcc22109fd5532f5a66b24810736a46119633344edecb32297709c04ea
+	- sha256 sum: 781e637501b24caa67e2728f47bc2483f7807527dd6cf417cabe359931182002
 	- size: 2334896 bytes
 
 Exported functions (2):
@@ -49,8 +49,6 @@ Exported functions (2):
 
 Exported variables (1):
 	- CurrentYear int
-
-Plugin imports:
 ```
 
 As simple as it is :)
