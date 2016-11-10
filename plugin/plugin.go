@@ -5,7 +5,6 @@ import (
 	"math"
 )
 
-
 // SayHello says hello :)
 func SayHello(who string) {
 	fmt.Printf("Hello %s\n", who)
