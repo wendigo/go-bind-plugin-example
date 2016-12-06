@@ -7,16 +7,22 @@ import (
 )
 
 func main() {
+	fmt.Println("> plug, _ := BindPluginAPI(\"./plugin.so\")")
 	plug, err := BindPluginAPI("./plugin.so")
 
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	fmt.Printf("plug.CalculateSin(100.0) = %f\n", plug.CalculateSin(100.00))
+	fmt.Println("> plug.CalculateSin(100.0)")
+	fmt.Println(plug.CalculateSin(100.00))
+	fmt.Println("> plug.SayHello(\"Gophers!\")")
 	plug.SayHello("Gophers!")
 
-	fmt.Printf("plug.CurrentYear is: %d\n\n\n", plug.CurrentYear)
-
+	fmt.Println("> plug.CurrentYear")
+	fmt.Println(plug.CurrentYear)
+	
+	fmt.Println("> plug")
+	
 	fmt.Println(plug)
 }
